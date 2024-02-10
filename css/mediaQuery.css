@@ -1,0 +1,478 @@
+/*
+------------------------------------------------------------------------------------------------------------ 
+                                                XS
+------------------------------------------------------------------------------------------------------------
+*/
+@media only screen and (max-width: 576px) {
+    .container-site {
+        margin: 0 0.5rem;
+    }
+
+    .nav-list {
+        margin-left: 0;
+    }
+
+    .header-logo {
+        width: 2.5rem;
+        height: 2.5rem;
+    }
+
+    .header-bottom {
+        grid-template-columns: 100%;
+        grid-template-areas: "header-content-box" "header-image-box" "order-box";
+    }
+
+    .header-content-box {
+        text-align: center;
+    }
+
+    .header-image-box img {
+        width: 75%;
+    }
+
+    .header-image-box {
+        text-align: center;
+    }
+
+    .header-image-box {
+        position: relative;
+    }
+
+    .delivery-btn {
+        position: absolute;
+        bottom: -4rem;
+    }
+
+    .header-bottom {
+        position: relative;
+        margin-top: 3rem;
+    }
+
+    .order-box {
+        margin-top: 10rem;
+        justify-self: center;
+    }
+
+    .order-box p {
+        width: 100%;
+    }
+
+    .food-menu-section-btns {
+        gap: 0.5rem;
+        display: grid;
+        grid-auto-flow: column;
+        overflow-x: auto;
+    }
+
+    .food-carts {
+        grid-template-columns: 100%;
+        justify-content: center;
+    }
+
+    .saleOff-carts {
+        grid-template-columns: 100%;
+    }
+
+    .mobile-app-section {
+        grid-template-columns: 100%;
+        height: auto;
+        border-radius: 0;
+        padding: 5rem 2rem 0;
+        border-top-right-radius: 20rem;
+        border-top-left-radius: 20rem;
+    }
+
+    .mobile-app-content {
+        order: 1;
+    }
+
+    .mobile-app-section img {
+        order: 2;
+    }
+
+    .mobile-app-content .mobile-app-btns .mobile-app-btn-content-box span:first-child {
+        font-size: 0.7rem;
+    }
+
+    .mobile-app-content .mobile-app-btns .mobile-app-btn-content-box span:not(:first-child) {
+        font-size: 0.9rem;
+    }
+
+    .store-near-you-section img {
+        position: absolute;
+        width: 6rem;
+        height: 3rem;
+    }
+
+    .store-near-you-section .store-near-you-section1 {
+        top: 8%;
+    }
+    .search-box{
+        width: 70%;
+    }
+    .search-box a{
+        width: 50%;
+    }
+    .main-footer {
+        grid-template-areas: "middle-footer right-footer" "left-footer left-footer";
+        justify-content: space-between;
+    }
+    
+    .left-footer{
+        grid-area: left-footer;
+        justify-content: center;
+    }
+    .middle-footer{
+        grid-area: middle-footer;
+    }
+    .right-footer{
+        grid-area: right-footer;
+    }
+}
+
+/*
+------------------------------------------------------------------------------------------------------------ 
+                                                SM
+------------------------------------------------------------------------------------------------------------
+*/
+@media only screen and (min-width: 576px) and (max-width: 768px) {
+    .nav-list {
+        margin-left: 0;
+    }
+
+    .container-site {
+        margin: 0 1rem;
+    }
+
+    .header-logo {
+        width: 2.5rem;
+        height: 2.5rem;
+    }
+
+    .header-bottom {
+        grid-template-columns: 100%;
+        grid-template-areas: "header-content-box" "header-image-box" "order-box";
+        margin-top: 3rem;
+    }
+
+    .header-content-box {
+        text-align: center;
+    }
+
+    .header-image-box img {
+        width: 75%;
+    }
+
+    .header-image-box {
+        text-align: center;
+    }
+
+    .header-image-box {
+        position: relative;
+    }
+
+    .delivery-btn {
+        position: absolute;
+        bottom: -4rem;
+    }
+
+    .header-bottom {
+        position: relative;
+    }
+
+    .order-box {
+        margin-top: 10rem;
+        justify-self: center;
+    }
+
+    .order-box p {
+        width: 100%;
+    }
+
+    .food-menu-section-btns {
+        gap: 0.5rem;
+        display: grid;
+        grid-auto-flow: column;
+        overflow-x: auto;
+    }
+
+    .food-carts {
+        grid-template-columns: 100%;
+        justify-content: center;
+    }
+
+    .saleOff-carts {
+        grid-template-columns: repeat(2 , calc(50% - 0.75rem));
+    }
+
+    .saleOff-cart button {
+        width: 9rem;
+    }
+
+    .mobile-app-section {
+        grid-template-columns: 100%;
+        border-radius: 0;
+        height: auto;
+        padding: 5rem 2rem 0;
+        border-top-right-radius: 20rem;
+        border-top-left-radius: 20rem;
+    }
+
+    .mobile-app-content {
+        order: 1;
+    }
+
+    .mobile-app-section img {
+        order: 2;
+    }
+
+    .store-near-you-section img {
+        position: absolute;
+        width: 8rem;
+        height: 3rem;
+    }
+    .store-near-you-section .store-near-you-section1 {
+        top: 8%;
+    }
+    .search-box{
+        width: 55%;
+    }
+    .search-box a{
+        width: 50%;
+    }
+    .main-footer {
+        grid-template-areas: "middle-footer . right-footer" ". left-footer .";
+        justify-content: center;
+    }
+    
+    .left-footer{
+        grid-area: left-footer;
+    }
+    .middle-footer{
+        grid-area: middle-footer;
+    }
+    .right-footer{
+        grid-area: right-footer;
+    }
+}
+
+/*
+------------------------------------------------------------------------------------------------------------ 
+                                                MD
+------------------------------------------------------------------------------------------------------------
+*/
+@media only screen and (min-width: 768px) and (max-width: 992px) {
+    .nav-logo {
+        order: 0;
+    }
+
+    .nav-btnBox {
+        order: 1;
+    }
+
+    .nav-list {
+        margin: 0 auto;
+    }
+
+    .container-site {
+        margin: 0 1.5rem;
+    }
+
+    .img1 {
+        width: 50%;
+    }
+
+    .delivery-btn {
+        top: -12%;
+    }
+
+    .header-content-box {
+        max-width: 80%;
+    }
+
+    .header-image-box {
+        position: relative;
+    }
+
+    .delivery-btn {
+        position: absolute;
+        top: -2rem;
+        left: -6rem;
+    }
+
+    .header-bottom {
+        margin-top: 6rem;
+    }
+
+    .food-carts {
+        grid-template-columns: auto auto;
+    }
+
+    .saleOff-carts {
+        grid-template-columns: repeat(2 , calc(50% - 0.75rem));
+    }
+
+    .mobile-app-section {
+        grid-template-columns: 30% 70%;
+    }
+
+    .mobile-app-content {
+        padding: 2rem 2rem 2rem 0;
+    }
+
+    .mobile-app-section .mobile-app-img {
+        position: relative;
+        top: -3rem;
+        height: 29rem;
+    }
+    .search-box a{
+        width: 55%;
+    }
+    .main-footer {
+        grid-template-areas: "middle-footer . right-footer" ". left-footer .";
+        justify-content: center;
+    }
+    
+    .left-footer{
+        grid-area: left-footer;
+    }
+    .middle-footer{
+        grid-area: middle-footer;
+    }
+    .right-footer{
+        grid-area: right-footer;
+    }
+}
+
+/*
+------------------------------------------------------------------------------------------------------------ 
+                                                LG
+------------------------------------------------------------------------------------------------------------
+*/
+@media only screen and (min-width: 992px) and (max-width: 1200px) {
+    .nav-logo {
+        order: 0;
+    }
+
+    .nav-btnBox {
+        order: 1;
+    }
+
+    .nav-list {
+        margin-left: 5rem;
+    }
+
+    .container-site {
+        margin: 0 3rem;
+    }
+
+    .header-content-box {
+        max-width: 80%;
+    }
+
+    .header-image-box {
+        position: relative;
+    }
+
+    .delivery-btn {
+        position: absolute;
+        top: 2rem;
+        left: -6rem;
+    }
+
+    .mobile-app-section .mobile-app-img {
+        position: relative;
+        top: -3rem;
+        height: 29rem;
+    }
+
+}
+
+/*
+------------------------------------------------------------------------------------------------------------ 
+                                                XL
+------------------------------------------------------------------------------------------------------------
+*/
+@media only screen and (min-width: 1200px) and (max-width: 1400px) {
+    .nav-list {
+        margin-left: 5rem;
+    }
+
+    .nav-logo {
+        order: 0;
+    }
+
+    .nav-btnBox {
+        order: 1;
+    }
+
+    .container-site {
+        max-width: 1170px;
+        margin: 0 auto;
+    }
+
+    .header-content-box {
+        max-width: 80%;
+    }
+
+    .header-image-box {
+        position: relative;
+    }
+
+    .delivery-btn {
+        position: absolute;
+        top: 4rem;
+        left: -6rem;
+    }
+
+    .mobile-app-section .mobile-app-img {
+        position: relative;
+        top: -3rem;
+        height: 29rem;
+    }
+
+}
+
+/*
+------------------------------------------------------------------------------------------------------------ 
+                                                XXL
+------------------------------------------------------------------------------------------------------------
+*/
+@media only screen and (min-width: 1400px) {
+    .nav-list {
+        margin-left: 5rem;
+    }
+
+    .nav-logo {
+        order: 0;
+    }
+
+    .nav-btnBox {
+        order: 1;
+    }
+
+    .container-site {
+        max-width: 1170px;
+        margin: 0 auto;
+    }
+
+    .header-content-box {
+        max-width: 80%;
+    }
+
+    .header-image-box {
+        position: relative;
+    }
+
+    .delivery-btn {
+        position: absolute;
+        top: 4rem;
+        left: -6rem;
+    }
+
+    .mobile-app-section .mobile-app-img {
+        position: relative;
+        top: -3rem;
+        height: 29rem;
+    }
+}

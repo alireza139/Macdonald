@@ -1,0 +1,541 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/mediaQuery.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <header class="mt-2">
+        <nav class="navbar navbar-expand-md fixed-top container-site">
+            <div class="container-fluid">
+                <a href="#" class="nav-logo d-md-none">
+                    <img src="./img/lgo.png" alt="logo" class="header-logo">
+                </a>
+                <div class="nav-btnBox">
+                    <button class="singIn-btn color-C90000 me-2">Sign in</button>
+                    <button class="logIn-btn">Logn in</button>
+                </div>
+                <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasNavbar">
+                    <div class="offcanvas-body">
+                        <a href="#">
+                            <img src="./img/lgo.png" alt="" class="img-fluid" class="mb-2">
+                        </a>
+                        <ul class="nav-list align-items-center d-md-flex mt-5 mt-md-0">
+                            <li>
+                                <a href="#" class="color-C90000 fw-bold">Homepage</a>
+                            </li>
+                            <li class="my-4 my-md-0">
+                                <a href="#" class="color-7D7C7C">Menu</a>
+                            </li>
+                            <li>
+                                <a href="#" class="color-7D7C7C">Sale off</a>
+                            </li>
+                            <li class="my-4 my-md-0">
+                                <a href="#" class="color-7D7C7C">News</a>
+                            </li>
+                            <li>
+                                <a href="#" class="color-7D7C7C">Contact</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <a href="#" class="hamburger navbar-toggler" type="button" data-bs-toggle="offcanvas"
+                    data-bs-target="#offcanvasNavbar"><svg width="35" height="35" viewBox="0 0 35 35" fill="none"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M2.91675 20.4166C2.91675 19.6112 3.56967 18.9583 4.37508 18.9583H30.6251C31.4305 18.9583 32.0834 19.6112 32.0834 20.4166C32.0834 21.2221 31.4305 21.875 30.6251 21.875H4.37508C3.56967 21.875 2.91675 21.2221 2.91675 20.4166Z"
+                            fill="#504F4F" />
+                        <path fill-rule="evenodd" clip-rule="evenodd"
+                            d="M4.375 14.5833C4.375 9.75082 8.29251 5.83331 13.125 5.83331H21.875C26.7075 5.83331 30.625 9.75082 30.625 14.5833C30.625 15.3887 29.9721 16.0416 29.1667 16.0416H5.83333C5.02792 16.0416 4.375 15.3887 4.375 14.5833ZM13.125 11.6666C13.125 12.4721 12.4721 13.125 11.6667 13.125C10.8613 13.125 10.2083 12.4721 10.2083 11.6666C10.2083 10.8612 10.8613 10.2083 11.6667 10.2083C12.4721 10.2083 13.125 10.8612 13.125 11.6666ZM17.5 13.125C18.3054 13.125 18.9583 12.4721 18.9583 11.6666C18.9583 10.8612 18.3054 10.2083 17.5 10.2083C16.6946 10.2083 16.0417 10.8612 16.0417 11.6666C16.0417 12.4721 16.6946 13.125 17.5 13.125ZM24.7917 11.6666C24.7917 12.4721 24.1388 13.125 23.3333 13.125C22.5279 13.125 21.875 12.4721 21.875 11.6666C21.875 10.8612 22.5279 10.2083 23.3333 10.2083C24.1388 10.2083 24.7917 10.8612 24.7917 11.6666Z"
+                            fill="#504F4F" />
+                        <path
+                            d="M30.625 26.25C30.625 27.8608 29.3192 29.1666 27.7083 29.1666H7.29167C5.68083 29.1666 4.375 27.8608 4.375 26.25C4.375 25.4446 5.02792 24.7916 5.83333 24.7916H29.1667C29.9721 24.7916 30.625 25.4446 30.625 26.25Z"
+                            fill="#504F4F" />
+                    </svg>
+                </a>
+            </div>
+        </nav>
+
+        <div class="header-bottom container-site mt-lg-5">
+            <div class="header-content-box mt-5 mt-md-0">
+                <h1 class="color-C90000">Order your favourite food</h1>
+                <p>Hamburger has many flavors, have you tried Cheese Beef Hamburger?</p>
+            </div>
+            <div class="order-box d-flex flex-column mt-md-5">
+                <p class="mb-3">Total Order: <span class="fw-bold fs-4">5.39$</span></p>
+                <div class="header-bottom-btns d-flex align-items-center">
+                    <div class="countar d-flex justify-content-center me-4">
+                        <span>+</span>
+                        <input type="text" value="3" class="color-FFC300">
+                        <span>-</span>
+                    </div>
+                    <button class="order-btn p-3">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                d="M5.9963 12C5.344 12 4.86633 12.6144 5.02717 13.2466L6.42488 18.7398C6.76319 20.0693 7.96032 21 9.33225 21H14.6652C16.0383 21 17.2362 20.0678 17.5734 18.7367L18.9644 13.2456C19.1245 12.6137 18.6469 12 17.9951 12H5.9963ZM9 16C9 15.4477 9.44771 15 10 15C10.5523 15 11 15.4477 11 16V17C11 17.5523 10.5523 18 10 18C9.44771 18 9 17.5523 9 17V16ZM13 16C13 15.4477 13.4477 15 14 15C14.5523 15 15 15.4477 15 16V17C15 17.5523 14.5523 18 14 18C13.4477 18 13 17.5523 13 17V16Z"
+                                fill="#323232" />
+                            <path
+                                d="M3 9C3 8.44772 3.44772 8 4 8H20C20.5523 8 21 8.44772 21 9C21 9.55228 20.5523 10 20 10H4C3.44772 10 3 9.55228 3 9Z"
+                                fill="#323232" />
+                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                d="M10.7071 4.70711C11.0976 4.31658 11.0976 3.68342 10.7071 3.29289C10.3166 2.90237 9.68342 2.90237 9.29289 3.29289L8.29289 4.29289C7.90237 4.68342 7.90237 5.31658 8.29289 5.70711C8.68342 6.09763 9.31658 6.09763 9.70711 5.70711L10.7071 4.70711ZM13.2929 4.70711C12.9024 4.31658 12.9024 3.68342 13.2929 3.29289C13.6834 2.90237 14.3166 2.90237 14.7071 3.29289L15.7071 4.29289C16.0976 4.68342 16.0976 5.31658 15.7071 5.70711C15.3166 6.09763 14.6834 6.09763 14.2929 5.70711L13.2929 4.70711Z"
+                                fill="#323232" />
+                        </svg>
+                        <span>Order now</span>
+                    </button>
+                </div>
+            </div>
+            <div class="header-image-box mt-3">
+                <button class="delivery-btn d-flex p-lg-3">
+                    <i class="bi bi-alarm-fill me-2"></i>
+                    <div class="delivery-content-btn d-flex flex-column justify-content-center">
+                        <span class="fs-5">Delivery</span>
+                        <span class="fs-6 me-2 color-7D7C7C">30 mins</span>
+                    </div>
+                </button>
+                <img src="img/Group 15.png" alt="img header">
+            </div>
+        </div>
+    </header>
+
+    <main class="container-site">
+        <section class="food-menu-section mt-5">
+            <h1 class="mb-5 color-C90000 menu">MENU</h1>
+            <div class="food-menu-section-btns">
+                <button class="py-2 d-flex">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd"
+                            d="M13.2193 2.60795C12.607 1.80052 11.3932 1.80052 10.781 2.60795L9.40692 4.42007C9.18858 4.70802 8.83187 4.85577 8.47387 4.80655L6.22093 4.49678C5.21707 4.35876 4.35876 5.21707 4.49678 6.22092L4.80655 8.47387C4.85577 8.83187 4.70802 9.18858 4.42007 9.40692L2.60795 10.781C1.80052 11.3932 1.80052 12.607 2.60795 13.2193L4.42007 14.5933C4.70802 14.8116 4.85577 15.1683 4.80655 15.5263L4.49678 17.7793C4.35876 18.7831 5.21707 19.6415 6.22092 19.5034L8.47387 19.1937C8.83187 19.1444 9.18858 19.2922 9.40691 19.5801L10.781 21.3923C11.3932 22.1997 12.607 22.1997 13.2193 21.3923L14.5933 19.5801C14.8116 19.2922 15.1683 19.1444 15.5263 19.1937L17.7793 19.5034C18.7831 19.6415 19.6415 18.7831 19.5034 17.7793L19.1937 15.5263C19.1444 15.1683 19.2922 14.8116 19.5801 14.5933L21.3923 13.2193C22.1997 12.607 22.1997 11.3932 21.3923 10.781L19.5801 9.40692C19.2922 9.18858 19.1444 8.83187 19.1937 8.47387L19.5034 6.22092C19.6415 5.21707 18.7831 4.35876 17.7793 4.49678L15.5263 4.80655C15.1683 4.85577 14.8116 4.70802 14.5933 4.42007L13.2193 2.60795ZM14.7071 9.2929C14.3166 8.90237 13.6834 8.90237 13.2929 9.2929L9.29289 13.2929C8.90237 13.6834 8.90237 14.3166 9.29289 14.7071C9.68342 15.0976 10.3166 15.0976 10.7071 14.7071L14.7071 10.7071C15.0976 10.3166 15.0976 9.68342 14.7071 9.2929ZM10 11C9.44772 11 9 10.5523 9 10C9 9.44772 9.44772 9 10 9C10.5523 9 11 9.44772 11 10C11 10.5523 10.5523 11 10 11ZM14 15C14.5523 15 15 14.5523 15 14C15 13.4477 14.5523 13 14 13C13.4477 13 13 13.4477 13 14C13 14.5523 13.4477 15 14 15Z"
+                            fill="#323232" />
+                    </svg>
+                    <span>Best saleer</span>
+                </button>
+
+                <button class="py-2 d-flex">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M2 14C2 13.4477 2.44772 13 3 13H21C21.5523 13 22 13.4477 22 14C22 14.5523 21.5523 15 21 15H3C2.44772 15 2 14.5523 2 14Z"
+                            fill="#504F4F" />
+                        <path fill-rule="evenodd" clip-rule="evenodd"
+                            d="M3 10C3 6.68629 5.68629 4 9 4H15C18.3137 4 21 6.68629 21 10C21 10.5523 20.5523 11 20 11H4C3.44772 11 3 10.5523 3 10ZM9 8C9 8.55228 8.55228 9 8 9C7.44772 9 7 8.55228 7 8C7 7.44772 7.44772 7 8 7C8.55228 7 9 7.44772 9 8ZM12 9C12.5523 9 13 8.55228 13 8C13 7.44772 12.5523 7 12 7C11.4477 7 11 7.44772 11 8C11 8.55228 11.4477 9 12 9ZM17 8C17 8.55228 16.5523 9 16 9C15.4477 9 15 8.55228 15 8C15 7.44772 15.4477 7 16 7C16.5523 7 17 7.44772 17 8Z"
+                            fill="#504F4F" />
+                        <path
+                            d="M21 18C21 19.1046 20.1046 20 19 20H5C3.89543 20 3 19.1046 3 18C3 17.4477 3.44772 17 4 17H20C20.5523 17 21 17.4477 21 18Z"
+                            fill="#504F4F" />
+                    </svg>
+                    <span>Hamberger</span>
+
+                </button>
+
+                <button class="py-2 d-flex">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M2 19C2 18.4477 2.44772 18 3 18H17C17.5523 18 18 18.4477 18 19C18 19.5523 17.5523 20 17 20H3C2.44772 20 2 19.5523 2 19Z"
+                            fill="#504F4F" />
+                        <path fill-rule="evenodd" clip-rule="evenodd"
+                            d="M4 4C2.89543 4 2 4.89543 2 6V8C2 12.4183 5.58172 16 10 16C12.5264 16 14.7793 14.8289 16.2454 13H18.5C20.433 13 22 11.433 22 9.5C22 7.567 20.433 6 18.5 6H18C18 4.89543 17.1046 4 16 4H4ZM18 8C18 9.0609 17.7935 10.0736 17.4185 11H18.5C19.3284 11 20 10.3284 20 9.5C20 8.67157 19.3284 8 18.5 8H18Z"
+                            fill="#504F4F" />
+                    </svg>
+                    <span>Drink</span>
+                </button>
+
+                <button class="py-2 d-flex">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M7.50668 15.3511C7.26153 14.6974 7.74481 14 8.44301 14H15.557C16.2552 14 16.7385 14.6974 16.4933 15.3511L14.7023 20.1273C14.2799 21.2538 13.203 22 12 22C10.797 22 9.72017 21.2538 9.29777 20.1273L7.50668 15.3511Z"
+                            fill="#504F4F" />
+                        <path fill-rule="evenodd" clip-rule="evenodd"
+                            d="M16.9754 6.5007C17.0026 6.7755 17.2239 7 17.5 7C18.8807 7 20 8.11929 20 9.5C20 10.8807 18.8807 12 17.5 12H12H6.5C5.11929 12 4 10.8807 4 9.5C4 8.11929 5.11929 7 6.5 7C6.77614 7 6.99737 6.7755 7.02462 6.5007C7.27516 3.9737 9.40709 2 12 2C14.5929 2 16.7248 3.9737 16.9754 6.5007Z"
+                            fill="#504F4F" />
+                    </svg>
+                    <span>Dessert</span>
+                </button>
+
+                <button class="py-2 d-flex">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M3 17.8C3 17.3582 3.35817 17 3.8 17H20.2C20.6418 17 21 17.3582 21 17.8C21 19.5673 19.5673 21 17.8 21H6.2C4.43269 21 3 19.5673 3 17.8Z"
+                            fill="#504F4F" />
+                        <path fill-rule="evenodd" clip-rule="evenodd"
+                            d="M3.8 17C3.35817 17 3 17.3582 3 17.8C3 19.5673 4.43269 21 6.2 21H17.8C19.5673 21 21 19.5673 21 17.8C21 17.3582 20.6418 17 20.2 17H3.8Z"
+                            fill="#504F4F" />
+                        <path fill-rule="evenodd" clip-rule="evenodd"
+                            d="M14.6785 7.35254C14.8842 6.94614 15 6.4866 15 6C15 4.34315 13.6569 3 12 3C10.3431 3 9 4.34315 9 6C9 6.4866 9.11585 6.94614 9.32147 7.35254C6.23647 8.32706 4 11.2119 4 14.619C4 14.8294 4.17056 15 4.38095 15H19.619C19.8294 15 20 14.8294 20 14.619C20 11.2119 17.7635 8.32706 14.6785 7.35254ZM13 6C13 6.55228 12.5523 7 12 7C11.4477 7 11 6.55228 11 6C11 5.44772 11.4477 5 12 5C12.5523 5 13 5.44772 13 6Z"
+                            fill="#504F4F" />
+                    </svg>
+                    <span>Fried chicken</span>
+                </button>
+            </div>
+        </section>
+
+        <section class="food-carts-section">
+            <div class="food-carts justify-content-center mt-5 mb-3">
+                <div class="food-cart p-3 d-flex flex-column">
+                    <img src="img/2.png" alt="food image" class="food-image pb-4 img-fluid">
+                    <h5 class="food-name fw-bold">Cheese Beef Hamburger</h5>
+                    <p class="food-describtion fs-6 color-7D7C7C">fried chicken balls, french fries</p>
+                    <div class="stars-box">
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-fill"></i>
+                        <span class="color-7D7C7C">(5)</span>
+                    </div>
+                    <div class="price-box d-flex justify-content-between align-items-center mt-4">
+                        <p class="price-food fw-bold fs-4">5.39$</p>
+                        <svg width="44" height="44" viewBox="0 0 44 44" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <rect width="44" height="44" rx="8" fill="#C90000" />
+                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                d="M15.9963 22C15.344 22 14.8663 22.6144 15.0272 23.2466L16.4249 28.7398C16.7632 30.0693 17.9603 31 19.3322 31H24.6652C26.0383 31 27.2362 30.0678 27.5734 28.7367L28.9644 23.2456C29.1245 22.6137 28.6469 22 27.9951 22H15.9963ZM19 26C19 25.4477 19.4477 25 20 25C20.5523 25 21 25.4477 21 26V27C21 27.5523 20.5523 28 20 28C19.4477 28 19 27.5523 19 27V26ZM23 26C23 25.4477 23.4477 25 24 25C24.5523 25 25 25.4477 25 26V27C25 27.5523 24.5523 28 24 28C23.4477 28 23 27.5523 23 27V26Z"
+                                fill="#FFEAE6" />
+                            <path
+                                d="M13 19C13 18.4477 13.4477 18 14 18H30C30.5523 18 31 18.4477 31 19C31 19.5523 30.5523 20 30 20H14C13.4477 20 13 19.5523 13 19Z"
+                                fill="#FFEAE6" />
+                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                d="M20.7071 14.7071C21.0976 14.3166 21.0976 13.6834 20.7071 13.2929C20.3166 12.9024 19.6834 12.9024 19.2929 13.2929L18.2929 14.2929C17.9024 14.6834 17.9024 15.3166 18.2929 15.7071C18.6834 16.0976 19.3166 16.0976 19.7071 15.7071L20.7071 14.7071ZM23.2929 14.7071C22.9024 14.3166 22.9024 13.6834 23.2929 13.2929C23.6834 12.9024 24.3166 12.9024 24.7071 13.2929L25.7071 14.2929C26.0976 14.6834 26.0976 15.3166 25.7071 15.7071C25.3166 16.0976 24.6834 16.0976 24.2929 15.7071L23.2929 14.7071Z"
+                                fill="#FFEAE6" />
+                        </svg>
+                    </div>
+                </div>
+                <div class="food-cart p-3 d-flex flex-column">
+                    <img src="img/13 (1).png" alt="food image" class="food-image pb-4 img-fluid">
+                    <h5 class="food-name fw-bold" class="fw-bold">Combo funny</h5>
+                    <p class="food-describtion fs-6 color-7D7C7C">fried chicken balls, french fries</p>
+                    <div class="stars-box">
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-fill"></i>
+                        <span class="color-7D7C7C">(5)</span>
+                    </div>
+                    <div class="price-box d-flex justify-content-between align-items-center mt-4">
+                        <p class="price-food fw-bold fs-4">5.39$</p>
+                        <svg width="44" height="44" viewBox="0 0 44 44" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <rect width="44" height="44" rx="8" fill="#C90000" />
+                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                d="M15.9963 22C15.344 22 14.8663 22.6144 15.0272 23.2466L16.4249 28.7398C16.7632 30.0693 17.9603 31 19.3322 31H24.6652C26.0383 31 27.2362 30.0678 27.5734 28.7367L28.9644 23.2456C29.1245 22.6137 28.6469 22 27.9951 22H15.9963ZM19 26C19 25.4477 19.4477 25 20 25C20.5523 25 21 25.4477 21 26V27C21 27.5523 20.5523 28 20 28C19.4477 28 19 27.5523 19 27V26ZM23 26C23 25.4477 23.4477 25 24 25C24.5523 25 25 25.4477 25 26V27C25 27.5523 24.5523 28 24 28C23.4477 28 23 27.5523 23 27V26Z"
+                                fill="#FFEAE6" />
+                            <path
+                                d="M13 19C13 18.4477 13.4477 18 14 18H30C30.5523 18 31 18.4477 31 19C31 19.5523 30.5523 20 30 20H14C13.4477 20 13 19.5523 13 19Z"
+                                fill="#FFEAE6" />
+                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                d="M20.7071 14.7071C21.0976 14.3166 21.0976 13.6834 20.7071 13.2929C20.3166 12.9024 19.6834 12.9024 19.2929 13.2929L18.2929 14.2929C17.9024 14.6834 17.9024 15.3166 18.2929 15.7071C18.6834 16.0976 19.3166 16.0976 19.7071 15.7071L20.7071 14.7071ZM23.2929 14.7071C22.9024 14.3166 22.9024 13.6834 23.2929 13.2929C23.6834 12.9024 24.3166 12.9024 24.7071 13.2929L25.7071 14.2929C26.0976 14.6834 26.0976 15.3166 25.7071 15.7071C25.3166 16.0976 24.6834 16.0976 24.2929 15.7071L23.2929 14.7071Z"
+                                fill="#FFEAE6" />
+                        </svg>
+                    </div>
+                </div>
+                <div class="food-cart p-3 d-flex flex-column">
+                    <img src="img/13 (2).png" alt="food image" class="food-image pb-4 img-fluid">
+                    <h5 class="food-name fw-bold">‌Chicken with Spicy Sauce</h5>
+                    <p class="food-describtion fs-6 color-7D7C7C">chili garlic sauce, black pepper sauce</p>
+                    <div class="stars-box">
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-fill"></i>
+                        <span class="color-7D7C7C">(5)</span>
+                    </div>
+                    <div class="price-box d-flex justify-content-between align-items-center mt-4">
+                        <p class="price-food fw-bold fs-4">5.39$</p>
+                        <svg width="44" height="44" viewBox="0 0 44 44" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <rect width="44" height="44" rx="8" fill="#C90000" />
+                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                d="M15.9963 22C15.344 22 14.8663 22.6144 15.0272 23.2466L16.4249 28.7398C16.7632 30.0693 17.9603 31 19.3322 31H24.6652C26.0383 31 27.2362 30.0678 27.5734 28.7367L28.9644 23.2456C29.1245 22.6137 28.6469 22 27.9951 22H15.9963ZM19 26C19 25.4477 19.4477 25 20 25C20.5523 25 21 25.4477 21 26V27C21 27.5523 20.5523 28 20 28C19.4477 28 19 27.5523 19 27V26ZM23 26C23 25.4477 23.4477 25 24 25C24.5523 25 25 25.4477 25 26V27C25 27.5523 24.5523 28 24 28C23.4477 28 23 27.5523 23 27V26Z"
+                                fill="#FFEAE6" />
+                            <path
+                                d="M13 19C13 18.4477 13.4477 18 14 18H30C30.5523 18 31 18.4477 31 19C31 19.5523 30.5523 20 30 20H14C13.4477 20 13 19.5523 13 19Z"
+                                fill="#FFEAE6" />
+                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                d="M20.7071 14.7071C21.0976 14.3166 21.0976 13.6834 20.7071 13.2929C20.3166 12.9024 19.6834 12.9024 19.2929 13.2929L18.2929 14.2929C17.9024 14.6834 17.9024 15.3166 18.2929 15.7071C18.6834 16.0976 19.3166 16.0976 19.7071 15.7071L20.7071 14.7071ZM23.2929 14.7071C22.9024 14.3166 22.9024 13.6834 23.2929 13.2929C23.6834 12.9024 24.3166 12.9024 24.7071 13.2929L25.7071 14.2929C26.0976 14.6834 26.0976 15.3166 25.7071 15.7071C25.3166 16.0976 24.6834 16.0976 24.2929 15.7071L23.2929 14.7071Z"
+                                fill="#FFEAE6" />
+                        </svg>
+                    </div>
+                </div>
+                <div class="food-cart p-3 d-flex flex-column">
+                    <img src="img/20220905-113313 1.png" alt="food image" class="food-image pb-4 img-fluid">
+                    <h5 class="food-name fw-bold">Salad mixed vinegar</h5>
+                    <p class="food-describtion fs-6 color-7D7C7C">Salad, vinegar, tomato</p>
+                    <div class="stars-box">
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-fill"></i>
+                        <span class="color-7D7C7C">(5)</span>
+                    </div>
+                    <div class="price-box d-flex justify-content-between align-items-center mt-4">
+                        <p class="price-food fw-bold fs-4">5.39$</p>
+                        <svg width="44" height="44" viewBox="0 0 44 44" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <rect width="44" height="44" rx="8" fill="#C90000" />
+                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                d="M15.9963 22C15.344 22 14.8663 22.6144 15.0272 23.2466L16.4249 28.7398C16.7632 30.0693 17.9603 31 19.3322 31H24.6652C26.0383 31 27.2362 30.0678 27.5734 28.7367L28.9644 23.2456C29.1245 22.6137 28.6469 22 27.9951 22H15.9963ZM19 26C19 25.4477 19.4477 25 20 25C20.5523 25 21 25.4477 21 26V27C21 27.5523 20.5523 28 20 28C19.4477 28 19 27.5523 19 27V26ZM23 26C23 25.4477 23.4477 25 24 25C24.5523 25 25 25.4477 25 26V27C25 27.5523 24.5523 28 24 28C23.4477 28 23 27.5523 23 27V26Z"
+                                fill="#FFEAE6" />
+                            <path
+                                d="M13 19C13 18.4477 13.4477 18 14 18H30C30.5523 18 31 18.4477 31 19C31 19.5523 30.5523 20 30 20H14C13.4477 20 13 19.5523 13 19Z"
+                                fill="#FFEAE6" />
+                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                d="M20.7071 14.7071C21.0976 14.3166 21.0976 13.6834 20.7071 13.2929C20.3166 12.9024 19.6834 12.9024 19.2929 13.2929L18.2929 14.2929C17.9024 14.6834 17.9024 15.3166 18.2929 15.7071C18.6834 16.0976 19.3166 16.0976 19.7071 15.7071L20.7071 14.7071ZM23.2929 14.7071C22.9024 14.3166 22.9024 13.6834 23.2929 13.2929C23.6834 12.9024 24.3166 12.9024 24.7071 13.2929L25.7071 14.2929C26.0976 14.6834 26.0976 15.3166 25.7071 15.7071C25.3166 16.0976 24.6834 16.0976 24.2929 15.7071L23.2929 14.7071Z"
+                                fill="#FFEAE6" />
+                        </svg>
+                    </div>
+                </div>
+                <div class="food-cart p-3 d-flex flex-column">
+                    <img src="img/burger_with_fried_chicken_2021_08_29_03_54_46_utc 1.png" alt="food image"
+                        class="food-image pb-4 img-fluid">
+                    <h5 class="food-name fw-bold">Chicken burger</h5>
+                    <p class="food-describtion fs-6 color-7D7C7C">fried chicken</p>
+                    <div class="stars-box">
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-fill"></i>
+                        <span class="color-7D7C7C">(5)</span>
+                    </div>
+                    <div class="price-box d-flex justify-content-between align-items-center mt-4">
+                        <p class="price-food fw-bold fs-4">5.39$</p>
+                        <svg width="44" height="44" viewBox="0 0 44 44" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <rect width="44" height="44" rx="8" fill="#C90000" />
+                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                d="M15.9963 22C15.344 22 14.8663 22.6144 15.0272 23.2466L16.4249 28.7398C16.7632 30.0693 17.9603 31 19.3322 31H24.6652C26.0383 31 27.2362 30.0678 27.5734 28.7367L28.9644 23.2456C29.1245 22.6137 28.6469 22 27.9951 22H15.9963ZM19 26C19 25.4477 19.4477 25 20 25C20.5523 25 21 25.4477 21 26V27C21 27.5523 20.5523 28 20 28C19.4477 28 19 27.5523 19 27V26ZM23 26C23 25.4477 23.4477 25 24 25C24.5523 25 25 25.4477 25 26V27C25 27.5523 24.5523 28 24 28C23.4477 28 23 27.5523 23 27V26Z"
+                                fill="#FFEAE6" />
+                            <path
+                                d="M13 19C13 18.4477 13.4477 18 14 18H30C30.5523 18 31 18.4477 31 19C31 19.5523 30.5523 20 30 20H14C13.4477 20 13 19.5523 13 19Z"
+                                fill="#FFEAE6" />
+                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                d="M20.7071 14.7071C21.0976 14.3166 21.0976 13.6834 20.7071 13.2929C20.3166 12.9024 19.6834 12.9024 19.2929 13.2929L18.2929 14.2929C17.9024 14.6834 17.9024 15.3166 18.2929 15.7071C18.6834 16.0976 19.3166 16.0976 19.7071 15.7071L20.7071 14.7071ZM23.2929 14.7071C22.9024 14.3166 22.9024 13.6834 23.2929 13.2929C23.6834 12.9024 24.3166 12.9024 24.7071 13.2929L25.7071 14.2929C26.0976 14.6834 26.0976 15.3166 25.7071 15.7071C25.3166 16.0976 24.6834 16.0976 24.2929 15.7071L23.2929 14.7071Z"
+                                fill="#FFEAE6" />
+                        </svg>
+                    </div>
+                </div>
+                <div class="food-cart p-3 d-flex flex-column">
+                    <img src="img//ice_tea_2021_11_30_16_48_46_utc 1.png" alt="food image"
+                        class="food-image pb-4 img-fluid">
+                    <h5 class="food-name fw-bold">Lipton</h5>
+                    <p class="food-describtion fs-6 color-7D7C7C">chili garlic sauce, black pepper sauce</p>
+                    <div class="stars-box">
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-fill"></i>
+                        <span class="color-7D7C7C">(5)</span>
+                    </div>
+                    <div class="price-box d-flex justify-content-between align-items-center mt-4">
+                        <p class="price-food fw-bold fs-4">5.39$</p>
+                        <svg width="44" height="44" viewBox="0 0 44 44" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <rect width="44" height="44" rx="8" fill="#C90000" />
+                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                d="M15.9963 22C15.344 22 14.8663 22.6144 15.0272 23.2466L16.4249 28.7398C16.7632 30.0693 17.9603 31 19.3322 31H24.6652C26.0383 31 27.2362 30.0678 27.5734 28.7367L28.9644 23.2456C29.1245 22.6137 28.6469 22 27.9951 22H15.9963ZM19 26C19 25.4477 19.4477 25 20 25C20.5523 25 21 25.4477 21 26V27C21 27.5523 20.5523 28 20 28C19.4477 28 19 27.5523 19 27V26ZM23 26C23 25.4477 23.4477 25 24 25C24.5523 25 25 25.4477 25 26V27C25 27.5523 24.5523 28 24 28C23.4477 28 23 27.5523 23 27V26Z"
+                                fill="#FFEAE6" />
+                            <path
+                                d="M13 19C13 18.4477 13.4477 18 14 18H30C30.5523 18 31 18.4477 31 19C31 19.5523 30.5523 20 30 20H14C13.4477 20 13 19.5523 13 19Z"
+                                fill="#FFEAE6" />
+                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                d="M20.7071 14.7071C21.0976 14.3166 21.0976 13.6834 20.7071 13.2929C20.3166 12.9024 19.6834 12.9024 19.2929 13.2929L18.2929 14.2929C17.9024 14.6834 17.9024 15.3166 18.2929 15.7071C18.6834 16.0976 19.3166 16.0976 19.7071 15.7071L20.7071 14.7071ZM23.2929 14.7071C22.9024 14.3166 22.9024 13.6834 23.2929 13.2929C23.6834 12.9024 24.3166 12.9024 24.7071 13.2929L25.7071 14.2929C26.0976 14.6834 26.0976 15.3166 25.7071 15.7071C25.3166 16.0976 24.6834 16.0976 24.2929 15.7071L23.2929 14.7071Z"
+                                fill="#FFEAE6" />
+                        </svg>
+                    </div>
+                </div>
+            </div>
+            <a href="#" class="seeAll d-block text-center">See all</a>
+        </section>
+
+        <section class="foods-saleOff-section mt-5">
+            <h1 class="text-center menu fw-bold color-C90000 mb-3">SALE OFF</h1>
+            <div class="saleOff-carts justify-content-center align-items-center">
+                <div class="saleOff-cart py-4 ps-4">
+                    <div class="part1 d-flex align-items-center justify-content-end">
+                        <span class="header-saleOff-content">fast food</span>
+                        <div class="header-saleOff-line ms-2"></div>
+                    </div>
+                    <div class="part2 mt-3">
+                        <h4 class="fw-bold">COMBO FUNNY</h4>
+                        <p class="saleOff-describtion">buy 1 funny combo get 1 coca cola</p>
+                        <div class="saleOff-price my-4 d-flex align-items-baseline">
+                            <span class="main-saleOff-price text-decoration-line-through">10.39$</span>
+                            <span class="new-saleOff-price fs-4 ms-2">5.6$</span>
+                        </div>
+                        <button>
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                    d="M5.9963 12C5.344 12 4.86633 12.6144 5.02717 13.2466L6.42488 18.7398C6.76319 20.0693 7.96032 21 9.33225 21H14.6652C16.0383 21 17.2362 20.0678 17.5734 18.7367L18.9644 13.2456C19.1245 12.6137 18.6469 12 17.9951 12H5.9963ZM9 16C9 15.4477 9.44771 15 10 15C10.5523 15 11 15.4477 11 16V17C11 17.5523 10.5523 18 10 18C9.44771 18 9 17.5523 9 17V16ZM13 16C13 15.4477 13.4477 15 14 15C14.5523 15 15 15.4477 15 16V17C15 17.5523 14.5523 18 14 18C13.4477 18 13 17.5523 13 17V16Z"
+                                    fill="#F1F1F1" />
+                                <path
+                                    d="M3 9C3 8.44772 3.44772 8 4 8H20C20.5523 8 21 8.44772 21 9C21 9.55228 20.5523 10 20 10H4C3.44772 10 3 9.55228 3 9Z"
+                                    fill="#F1F1F1" />
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                    d="M10.7071 4.70711C11.0976 4.31658 11.0976 3.68342 10.7071 3.29289C10.3166 2.90237 9.68342 2.90237 9.29289 3.29289L8.29289 4.29289C7.90237 4.68342 7.90237 5.31658 8.29289 5.70711C8.68342 6.09763 9.31658 6.09763 9.70711 5.70711L10.7071 4.70711ZM13.2929 4.70711C12.9024 4.31658 12.9024 3.68342 13.2929 3.29289C13.6834 2.90237 14.3166 2.90237 14.7071 3.29289L15.7071 4.29289C16.0976 4.68342 16.0976 5.31658 15.7071 5.70711C15.3166 6.09763 14.6834 6.09763 14.2929 5.70711L13.2929 4.70711Z"
+                                    fill="#F1F1F1" />
+                            </svg>
+
+                            <span>Order now</span>
+                        </button>
+                    </div>
+                    <img src="img/13 (1).png" alt="">
+                </div>
+                <div class="active saleOff-cart saleOff-cart py-4 ps-4">
+                    <div class="part1 d-flex align-items-center justify-content-end">
+                        <span class="active header-saleOff-content header-saleOff-content">fast food</span>
+                        <div class="header-saleOff-line ms-2"></div>
+                    </div>
+                    <div class="part2 mt-3">
+                        <h4 class="active fw-bold h4-saleOff">Salad mixed vinegar</h4>
+                        <!-- <p class="saleOff-describtion">buy 1 funny combo get 1 coca cola</p> -->
+                        <div class="saleOff-price my-5 d-flex align-items-baseline">
+                            <span class="active main-saleOff-price text-decoration-line-through">10.39$</span>
+                            <span class="active new-saleOff-price fs-4 ms-2">5.6$</span>
+                        </div>
+                        <button class="active btn-saleOff">
+                            <svg width="24" height="25" viewBox="0 0 24 25" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                    d="M5.9963 12.6359C5.344 12.6359 4.86633 13.2503 5.02717 13.8825L6.42488 19.3756C6.76319 20.7052 7.96032 21.6359 9.33225 21.6359H14.6652C16.0383 21.6359 17.2362 20.7036 17.5734 19.3726L18.9644 13.8814C19.1245 13.2495 18.6469 12.6359 17.9951 12.6359H5.9963ZM9 16.6359C9 16.0836 9.44771 15.6359 10 15.6359C10.5523 15.6359 11 16.0836 11 16.6359V17.6359C11 18.1881 10.5523 18.6359 10 18.6359C9.44771 18.6359 9 18.1881 9 17.6359V16.6359ZM13 16.6359C13 16.0836 13.4477 15.6359 14 15.6359C14.5523 15.6359 15 16.0836 15 16.6359V17.6359C15 18.1881 14.5523 18.6359 14 18.6359C13.4477 18.6359 13 18.1881 13 17.6359V16.6359Z"
+                                    fill="#323232" />
+                                <path
+                                    d="M3 9.63586C3 9.08358 3.44772 8.63586 4 8.63586H20C20.5523 8.63586 21 9.08358 21 9.63586C21 10.1881 20.5523 10.6359 20 10.6359H4C3.44772 10.6359 3 10.1881 3 9.63586Z"
+                                    fill="#323232" />
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                    d="M10.7071 5.34297C11.0976 4.95245 11.0976 4.31928 10.7071 3.92876C10.3166 3.53823 9.68342 3.53823 9.29289 3.92876L8.29289 4.92876C7.90237 5.31928 7.90237 5.95245 8.29289 6.34297C8.68342 6.7335 9.31658 6.7335 9.70711 6.34297L10.7071 5.34297ZM13.2929 5.34297C12.9024 4.95245 12.9024 4.31928 13.2929 3.92876C13.6834 3.53823 14.3166 3.53823 14.7071 3.92876L15.7071 4.92876C16.0976 5.31928 16.0976 5.95245 15.7071 6.34297C15.3166 6.7335 14.6834 6.7335 14.2929 6.34297L13.2929 5.34297Z"
+                                    fill="#323232" />
+                            </svg>
+                            <span>Order now</span>
+                        </button>
+                    </div>
+                    <img src="img/20220905-113313 1.png" alt="">
+                </div>
+                <div class="saleOff-cart py-4 ps-4">
+                    <div class="part1 d-flex align-items-center justify-content-end">
+                        <span class="header-saleOff-content">House</span>
+                        <div class="header-saleOff-line ms-2"></div>
+                    </div>
+                    <div class="part2 mt-3">
+                        <h4 class="fw-bold">CHICKEN BUGGER</h4>
+                        <p class="saleOff-describtion">fried chicken</p>
+                        <div class="saleOff-price my-4 d-flex align-items-baseline">
+                            <span class="main-saleOff-price text-decoration-line-through">10.39$</span>
+                            <span class="new-saleOff-price fs-4 ms-2">5.6$</span>
+                        </div>
+                        <button>
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                    d="M5.9963 12C5.344 12 4.86633 12.6144 5.02717 13.2466L6.42488 18.7398C6.76319 20.0693 7.96032 21 9.33225 21H14.6652C16.0383 21 17.2362 20.0678 17.5734 18.7367L18.9644 13.2456C19.1245 12.6137 18.6469 12 17.9951 12H5.9963ZM9 16C9 15.4477 9.44771 15 10 15C10.5523 15 11 15.4477 11 16V17C11 17.5523 10.5523 18 10 18C9.44771 18 9 17.5523 9 17V16ZM13 16C13 15.4477 13.4477 15 14 15C14.5523 15 15 15.4477 15 16V17C15 17.5523 14.5523 18 14 18C13.4477 18 13 17.5523 13 17V16Z"
+                                    fill="#F1F1F1" />
+                                <path
+                                    d="M3 9C3 8.44772 3.44772 8 4 8H20C20.5523 8 21 8.44772 21 9C21 9.55228 20.5523 10 20 10H4C3.44772 10 3 9.55228 3 9Z"
+                                    fill="#F1F1F1" />
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                    d="M10.7071 4.70711C11.0976 4.31658 11.0976 3.68342 10.7071 3.29289C10.3166 2.90237 9.68342 2.90237 9.29289 3.29289L8.29289 4.29289C7.90237 4.68342 7.90237 5.31658 8.29289 5.70711C8.68342 6.09763 9.31658 6.09763 9.70711 5.70711L10.7071 4.70711ZM13.2929 4.70711C12.9024 4.31658 12.9024 3.68342 13.2929 3.29289C13.6834 2.90237 14.3166 2.90237 14.7071 3.29289L15.7071 4.29289C16.0976 4.68342 16.0976 5.31658 15.7071 5.70711C15.3166 6.09763 14.6834 6.09763 14.2929 5.70711L13.2929 4.70711Z"
+                                    fill="#F1F1F1" />
+                            </svg>
+                            <span>Order now</span>
+                        </button>
+                    </div>
+                    <img src="img/burger_with_fried_chicken_2021_08_29_03_54_46_utc 1.png" alt="">
+                </div>
+            </div>
+        </section>
+
+        <section class="mobile-app-section">
+            <img src="img/Group 22.png" alt="mobile app image" class="mobile-app-img img-fluid w-100 mt-5 mt-md-0">
+
+            <div class="mobile-app-content align-self-center text-center text-md-start">
+                <p class="mobile-app-text1 color-7D7C7C">Exclusive offers and more</p>
+                <h1 class="color-C90000 my-3">MCDONALD’S MOBILE APP</h1>
+                <p class="mobile-app-text2 mb-5">
+                    As a global No. 1 fast food brand, McDonald's wishes to bring customers not
+                    only delicious and hygienic food of international standards but also the best service experience.
+                </p>
+                <div class="mobile-app-btns d-flex justify-content-center justify-content-md-start">
+                    <button class="appStore-btn d-flex align-items-center">
+                        <i class="bi bi-apple me-2 fs-3"></i>
+                        <div class="mobile-app-btn-content-box d-flex flex-column align-items-start">
+                            <span class="fw-light">Download on the</span>
+                            <span>App Store</span>
+                        </div>
+                    </button>
+
+                    <button class="bi-googlePlay-btn d-flex align-items-center ms-4">
+                        <i class="bi bi-google-play me-2 fs-3"></i>
+                        <div class="mobile-app-btn-content-box d-flex flex-column align-items-start">
+                            <span class="fw-light">Download on the</span>
+                            <span>Google Play</span>
+                        </div>
+                    </button>
+                </div>
+            </div>
+        </section>
+
+        <section class="store-near-you-section mt-5">
+            <img src="img/location1.png" alt="" class="store-near-you-section1 img-fluid">
+            <img src="img/location2.png" alt="" class="store-near-you-section2 img-fluid">
+            <div class="store-near-you-content-box d-flex flex-column align-items-center justify-content-center p-3">
+                <h3 class="color-F1F1F1">FIND A FOODELI STORE NEAR YOU</h3>
+                <span class="color-F1F1F1">see the convenience store address with you most</span>
+                <div class="search-box mt-4 d-flex py-1 ps-3 pe-1">
+                    <input type="text" placeholder="Tiping Location">
+                    <a href="#" class="py-2 text-center">See on map</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="mt-5 py-5">
+        <div class="container-site main-footer">
+            <div class="left-footer d-flex align-items-center">
+                <img src="img/lgo.png" alt="footer logo" class="me-2 mb-3">
+                <div class="d-flex flex-column">
+                    <p class="fw-bold mb-3 fs-3">Mc Donald’s</p>
+                    <div class="logo-box">
+                        <i class="bi bi-twitter"></i>
+                        <i class="bi bi-facebook mx-3"></i>
+                        <i class="bi bi-messenger"></i>
+                    </div>
+                </div>
+            </div>
+
+            <div class="middle-footer">
+                <label class="mb-4 fs-sm-5">USEFUL LINKS</label>
+                <ul>
+                    <li>Homepage</li>
+                    <li>Menu</li>
+                    <li>Sale off</li>
+                    <li>News</li>
+                    <li>Contact</li>
+                </ul>
+            </div>
+
+            <div class="right-footer">
+                <label class="mb-4 fs-sm-5">OPENING HOUR</label>
+                <ul>
+                    <li>Monday - Friday - 23:00h</li>
+                    <li>Saturday:09:00 - 16:00h</li>
+                    <li>Sunday:12:00 - 18:00h</li>
+                </ul>
+
+            </div>
+        </div>
+
+    </footer>
+
+
+
+</body>
+
+</html>
