@@ -249,6 +249,7 @@ h1.menu {
     display: grid;
     grid-template-columns: repeat(3 , calc(33% - 1.5rem));
     gap: 1.5rem;
+    position: relative;
 }
 
 .food-cart {
@@ -265,7 +266,11 @@ h1.menu {
     height: 11rem;
     align-self: center;
 }
-
+.Badge-icon{
+    width: 3rem;
+    height: 3rem;
+    position: absolute;
+}
 a.seeAll {
     text-decoration: underline;
     color: var(--color_504F4F);
